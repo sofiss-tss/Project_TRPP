@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_marginTop="90sp"
+            android:layout_marginLeft="120sp"
+            android:gravity="center"
+            android:src="@drawable/users"/>
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="20sp"
+            android:background="@color/white"
+            android:hint="@string/em"
+            android:textColorHint="@color/pole"
+            android:textColor="@color/black"
+            android:ems="10"
+            android:padding="15sp"
+            android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="20sp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/pole"
+            android:hint="@string/pas"
+            android:ems="10"
+            android:padding="15sp"
+            android:inputType="textPassword" />
+        <Button
+            android:id="@+id/go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120sp"
+            android:layout_marginRight="120sp"
+            android:backgroundTint="@color/purple_700"
+            android:fontFamily="@font/montserrat_thin"
+            android:text="Войти"
+            android:textColor="@color/white"
+            android:textSize="26sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/button_home"
+                android:layout_width="110sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="130sp"
+                android:layout_marginRight="10sp"
+                android:backgroundTint="@color/purple_700"
+                android:fontFamily="@font/montserrat_thin"
+                android:text="Главная"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+            <Button
+                android:id="@+id/button_event_list"
+                android:layout_width="130sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130sp"
+                android:layout_marginRight="13sp"
+                android:backgroundTint="@color/purple_700"
+                android:fontFamily="@font/montserrat_thin"
+                android:text="Мероприятия"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+            <Button
+                android:id="@+id/button_contact_list"
+                android:layout_width="110sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130sp"
+                android:layout_marginRight="10sp"
+                android:backgroundTint="@color/purple_700"
+                android:fontFamily="@font/montserrat_thin"
+                android:text="Контакты"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

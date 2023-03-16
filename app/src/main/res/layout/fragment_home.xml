@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:background="@color/bg">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_thin"
+        android:text="@string/text"
+        android:textColor="@color/black"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/list"
+        android:layout_below="@id/text"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="130sp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_thin"
+            android:text="@string/t1"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/list" />
+        <TextView
+            android:layout_width="130sp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_thin"
+            android:text="@string/t2"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/list"/>
+        <TextView
+            android:layout_width="130sp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_thin"
+            android:text="@string/t3"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/list"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="wrap_content"
+        android:layout_height="270sp"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="160sp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/p2"/>
+    <ImageView
+        android:id="@+id/question"
+        android:layout_below="@id/picture"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="30sp"
+        android:src="@drawable/question"
+        android:layout_marginLeft="320sp" />
+    <TextView
+        android:id="@+id/txtt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/picture"
+        android:fontFamily="@font/montserrat_thin"
+        android:text="@string/question"
+        android:textColor="@color/black"
+        android:layout_marginLeft="130sp"
+        android:layout_marginTop="30sp"
+        android:textSize="25sp"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/downLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/question"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="200sp"
+            android:layout_height="50sp"
+            android:layout_marginLeft="190sp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/messages"
+            android:layout_width="200sp"
+            android:layout_height="50sp"
+            android:layout_marginLeft="190sp"
+            android:hint="@string/messages"/>
+        <Button
+            android:id="@+id/button2"
+            android:layout_marginLeft="190sp"
+            android:layout_width="200sp"
+            android:layout_height="50sp"
+            android:backgroundTint="@color/purple_700"
+            android:text="@string/resume"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</RelativeLayout>
+</FrameLayout>

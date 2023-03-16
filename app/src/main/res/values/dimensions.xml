@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="in_pixels">1px</dimen>
+    <dimen name="in_dp">100dp</dimen>
+    <dimen name="in_sp">100sp</dimen>
+    <dimen name="s1">150sp</dimen>
+    <dimen name="s2">50sp</dimen>
+    <dimen name="s3">120sp</dimen>
+    <dimen name="s4">160sp</dimen>
+</resources>

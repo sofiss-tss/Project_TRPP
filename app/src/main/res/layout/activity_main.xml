@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_up"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/in_sp"
+        android:background="@color/bg1">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/in_sp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ne1"
+           />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="@dimen/in_sp"
+            android:layout_height="50sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="125sp"
+            android:backgroundTint="@color/bg"
+            android:text="@string/Login" />
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/list"
+            android:background="@color/bg1"/>
+<!--            android:layout_marginLeft="190sp"-->
+            />
+
+    </LinearLayout>
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/frame_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="100sp">-->
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/navigation"
+        android:layout_marginTop="100sp"/>
+
+</RelativeLayout>

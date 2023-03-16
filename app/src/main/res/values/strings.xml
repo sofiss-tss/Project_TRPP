@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NetwoEvents</string>
+    <string name="text">Find and organize events to create business contacts"</string>
+    <string name="Login">Войти</string>
+    <string name="messages">Добавьте сообщение</string>
+    <string name="email">Добавьте ваш email</string>
+    <string name="resume">Продолжить</string>
+    <string name="question">Задать вопрос</string>
+    <string name="t1">Широкий список мероприятий</string>
+    <string name="t2">Онлайн - расписание</string>
+    <string name="t3">Удобная связь</string>
+    <string name="pas">Пароль</string>
+    <string name="em">Email</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
