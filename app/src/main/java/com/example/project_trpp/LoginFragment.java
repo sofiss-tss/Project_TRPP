@@ -1,4 +1,4 @@
-package com.example.netwoevents;
+package com.example.project_trpp;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -67,7 +67,7 @@ public class LoginFragment extends Fragment {
             public void onClick(View view) {
 
 
-                //Navigation.findNavController(view).navigate(R.id.action_loginFragment_to_homeFragment2);
+                Navigation.findNavController(view).navigate(R.id.action_loginFragment_to_homeFragment2);
 
 
 //                HomeFragment homeFragment = new HomeFragment();
@@ -87,13 +87,6 @@ public class LoginFragment extends Fragment {
                     Bundle bundle = new Bundle();
                     bundle.putString("bundleKey", em);
                     Navigation.findNavController(view).navigate(R.id.action_loginFragment_to_homeFragment2, bundle);
-
-//                    Bundle result = new Bundle();
-//                    result.putString("bundleKey", em);
-//                    getParentFragmentManager().setFragmentResult(
-//                            "requestKey", result);
-
-
 
             }
         });

@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btn1 = findViewById(R.id.button1);
-        //setNewFragment(new HomeFragment());
+        setNewFragment(new HomeFragment());
 
 
        NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager()
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              // navController.navigate(R.id.action_homeFragment_to_loginFragment);
+              navController.navigate(R.id.action_homeFragment_to_loginFragment);
 
             }
         });
