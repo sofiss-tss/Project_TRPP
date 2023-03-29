@@ -10,10 +10,19 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 
+/**
+
+ Activity приложения
+ */
 public class MainActivity extends AppCompatActivity {
 
     private Button btn1;
 
+    /**
+
+     Метод для установки нового фрагмента
+     @param fragment фрагмент, который нужно установить
+     */
     public void setNewFragment(Fragment fragment){
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction().
                 setReorderingAllowed(true);
@@ -21,6 +30,13 @@ public class MainActivity extends AppCompatActivity {
         ft.addToBackStack(null);
         ft.commit();
     }
+
+    /**
+
+     Метод вызывается при создании активности
+
+     @param savedInstanceState объект класса Bundle, который содержит данные о состоянии активности
+     */
    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
 
         btn1 = findViewById(R.id.button1);
         setNewFragment(new HomeFragment());
-
 
        NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager()
                .findFragmentById(R.id.fragmentContainerView);
