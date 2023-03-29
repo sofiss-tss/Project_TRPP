@@ -14,23 +14,44 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+/**
+ *  Фрагмент, отображающий главный экран приложения
+ */
 public class HomeFragment extends Fragment {
-    private ImageView picture;
-    private ImageView question;
-    private EditText email;
-    private EditText message;
-    private Button btn2;
-    private TextView txt;
+    private ImageView picture; // изображение на главном экране
+    private ImageView question; // изображение иконки вопроса
+    private EditText email; // поле для ввода адреса электронной почты
+    private EditText message; // поле для ввода сообщения
+    private Button btn2; // кнопка для отправки сообщения
+    private TextView txt; // текстовое поле для отображения статуса отправки сообщения
 
-    private String value;
-    private static final String TAG = "MyTAG";
-    private static final String F1 = "Fragment_1";
+    private String value; // значение для передачи через Bundle
+    private static final String TAG = "MyTAG"; // тег для логирования
+    private static final String F1 = "Fragment_1"; // название фрагмента
 
+    /**
+
+     Проверка правильности введенного адреса электронной почты.
+     @param email адрес электронной почты для проверки
+     @return true, если адрес электронной почты корректен, иначе false
+     */
 
     public boolean isEmailValid (String email){
         return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches();
     }
 
+    /**
+
+     Создание и возвращение представления, отображающего главный экран приложения.
+
+     @param inflater объект, отвечающий за разбор макета и создание объектов View
+
+     @param container родительский View, в котором будет размещен фрагмент
+
+     @param savedInstanceState сохраненное состояние фрагмента
+
+     @return представление, отображающее главный экран приложения
+     */
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -38,11 +59,21 @@ public class HomeFragment extends Fragment {
 
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
+
+    /**
+
+     Создание View-компонентов и обработчиков событий для элементов на главном экране.
+
+     @param view представление, отображающее главный экран приложения
+
+     @param savedInstanceState сохраненное состояние фрагмента
+     */
+
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
+        // получение ссылок на View-компоненты
         picture = (ImageView) getView().findViewById(R.id.picture);
         picture.setImageResource(R.drawable.p2);
         txt =  (TextView) getView().findViewById(R.id.txtt);
@@ -52,14 +83,26 @@ public class HomeFragment extends Fragment {
         message = (EditText) getView().findViewById(R.id.messages);
         btn2 =  (Button) getView().findViewById(R.id.button2);
 
+        // проверка наличия переданных данных через Bundle
         if (getArguments() != null) {
             value = getArguments().getString("bundleKey");
             Log.e(TAG,value);
             email.setText(value);
         }
 
+        /**
 
-        btn2.setOnClickListener(
+         Обработчик нажатия на кнопку "Продолжить". Проверяет введенный адрес электронной почты и сообщение.
+
+         Если адрес электронной почты неверный, то выводится сообщение об ошибке.
+
+         Если сообщение пустое, то выводится предупреждение.
+
+         Если все данные заполнены корректно, то выводится сообщение об успешной отправке и отключаются поля ввода.
+         @param view View, на которую нажали
+         */
+
+         btn2.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
