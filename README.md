@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>NetwoEvents - агрегатор бизнес-мероприятий</title>
+   
   </head>
   <body>
     <header>
