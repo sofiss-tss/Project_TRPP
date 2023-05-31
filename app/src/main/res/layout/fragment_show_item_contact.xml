@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.ShowItemContactFragment"
+    android:background="@color/bg">
+
+    <ImageView
+        android:id="@+id/contact_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/a"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100sp"
+        />
+    <TextView
+        android:id="@+id/contact_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Имя"
+        android:textSize="20dp"
+        android:textColor="@color/list"
+        android:padding="30dp"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/send_message"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="620dp"
+        android:background="@color/bg1"
+        android:gravity="center"
+        android:hint="Введите сообщение"
+        android:textColor="@color/list"
+        android:textColorHint="@color/pole"
+        android:textSize="20dp"
+        android:visibility="invisible"
+
+
+
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_send_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_700"
+        android:layout_marginTop="625dp"
+        android:src="@drawable/send_message"
+        android:layout_marginLeft="320dp"
+        android:visibility="visible"
+        />
+
+
+
+
+
+</FrameLayout>

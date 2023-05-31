@@ -11,6 +11,10 @@
     <string name="t3">Удобная связь</string>
     <string name="pas">Пароль</string>
     <string name="em">Email</string>
+
+    <string name="preference_file_key">com.example.netwoevents.SHARED_PREFS_KEY</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginFragment"
+    tools:context=".ui.view.LoginFragment"
     android:background="@color/bg">
 
     <LinearLayout
@@ -31,7 +31,8 @@
             android:textColor="@color/black"
             android:ems="10"
             android:padding="15sp"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            />
         <EditText
             android:id="@+id/et2"
             android:layout_width="match_parent"
@@ -48,7 +49,7 @@
             android:padding="15sp"
             android:inputType="textPassword" />
         <Button
-            android:id="@+id/go"
+            android:id="@+id/button_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="120sp"

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.NewEventFragment"
+    android:background="@color/bg">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавьте мероприятие"
+        android:fontFamily="@font/montserrat_thin"
+        android:textSize="20dp"
+        android:textColor="@color/list"
+        android:padding="50dp"
+        android:textAlignment = 'center'
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/event_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Название мероприятия"
+            android:layout_marginLeft="20dp"
+            />
+
+        <EditText
+
+            android:id="@+id/edit_text_new_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:background="@color/white"
+            android:hint="Введите название"
+            android:textColorHint="@color/pole"
+            android:textColor="@color/black"
+            android:padding="15sp"
+            android:backgroundTint="@color/bg1"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/data_begin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Дата начала"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+                android:id="@+id/data_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Дата окончания"
+                android:layout_marginLeft="110dp"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/et_data_begin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:background="@color/white"
+            android:hint="Начало"
+            android:textColorHint="@color/pole"
+            android:textColor="@color/black"
+            android:padding="15sp"
+            android:backgroundTint="@color/bg1"
+            android:inputType="datetime"/>
+        <EditText
+
+            android:id="@+id/et_data_end"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:background="@color/white"
+            android:hint="Окончание"
+            android:textColorHint="@color/pole"
+            android:textColor="@color/black"
+            android:padding="15sp"
+            android:backgroundTint="@color/bg1"
+            android:inputType="datetime"/>
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/event_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Адрес мероприятия"
+            android:layout_marginLeft="20dp"
+            />
+
+        <EditText
+
+            android:id="@+id/et_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:background="@color/white"
+            android:hint="Введите адрес"
+            android:textColorHint="@color/pole"
+            android:textColor="@color/black"
+            android:padding="15sp"
+            android:backgroundTint="@color/bg1"/>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="500dp"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:backgroundTint="@color/purple_700"
+        android:text="Save"
+        android:textColor="@color/white"/>
+
+
+
+
+
+</FrameLayout>
